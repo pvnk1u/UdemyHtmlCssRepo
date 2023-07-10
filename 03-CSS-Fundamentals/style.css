@@ -85,3 +85,27 @@ li:last-child {
 li:nth-child(2) {
   color: red;
 }
+
+a:link {
+  color: #1098ad;
+  /* 去除链接下划线 */
+  text-decoration: none;
+}
+
+/* 访问过的链接状态*/
+a:visited {
+  color: #1098ad;
+}
+
+/* 链接鼠标悬停状态 */
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline orange;
+}
+
+/* 链接点击状态*/
+a:active {
+  background-color: black;
+  font-style: italic;
+}
