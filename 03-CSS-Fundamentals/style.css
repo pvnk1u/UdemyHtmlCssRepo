@@ -1,11 +1,11 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+* {
+  border-
+}
+
+/* body 元素是所有元素的父元素，所以其样式会被所有元素继承*/
+body {
+  color: #444;
   font-family: sans-serif;
-  color: #444444;
 }
 
 h1,
@@ -125,4 +125,8 @@ a:active {
 
 footer p {
   color: green;
+}
+
+nav {
+  font-size: 18px;
 }
