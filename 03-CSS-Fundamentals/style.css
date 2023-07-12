@@ -1,11 +1,43 @@
 * {
-  border-top: #1098ad;
+  /* border-top: #1098ad; */
+  margin: 0;
+  padding: 0;
 }
 
 /* body 元素是所有元素的父元素，所以其样式会被所有元素继承*/
 body {
   color: #444;
   font-family: sans-serif;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  /* 设置元素内容盒元素边框间的填充 */
+  /* padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px; */
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+nav {
+  font-size: 18px;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  /* 表示上下边框样式为5像素宽度颜色为1098ad的实线边框 */
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
 }
 
 h1,
@@ -22,10 +54,13 @@ h1 {
 
 h2 {
   font-size: 40px;
+  margin-bottom: 30px;
 }
 
 h3 {
   font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 h4 {
@@ -38,11 +73,25 @@ p {
   font-size: 22px;
   /* line-height default value is 1 */
   line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 
 li {
   /* li default font-size is 22 */
   font-size: 20px;
+  /* 设置li元素的下外边距 */
+  margin-bottom: 10px;
+}
+
+/* 设置li元素的最后一个的下外边距为0 */
+li:last-child {
+  margin-bottom: 0;
 }
 
 #author {
@@ -61,17 +110,6 @@ li {
 
 .related {
   list-style: none;
-}
-
-.main-header {
-  background-color: #f7f7f7;
-}
-
-aside {
-  background-color: #f7f7f7;
-  /* 表示上下边框样式为5像素宽度颜色为1098ad的实线边框 */
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
 }
 
 li:first-child {
