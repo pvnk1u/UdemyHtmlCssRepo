@@ -10,6 +10,14 @@ body {
   font-family: sans-serif;
 }
 
+.container {
+  /* 设置整个页面的宽度及使其水平居中显示,
+  这样即使浏览器窗口变化，其也会不断调整位置使其自身一直居中显示
+   */
+  width: 700px;
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #f7f7f7;
   /* 设置元素内容盒元素边框间的填充 */
