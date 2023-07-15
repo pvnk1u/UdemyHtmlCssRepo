@@ -190,6 +190,44 @@ button {
   right: 50px;
 }
 
+/* 伪元素 */
+/* 选中h1标题的第一个字符 */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* 选中所有p段落的第一行 */
+/* p::first-line {
+  color: red 
+*/
+
+/* 选择紧跟在h3标题后的第一个p兄弟元素的第一行 */
+/* h3 + p::first-line {
+  color: red;
+} */
+
+/* 使用伪元素在h2后边增加TOP标识
+为了使伪元素相对于h2绝对定位，
+需要将伪元素的父元素h2的定位改为relative
+*/
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  padding: 5px 10px;
+  top: -15px;
+  right: -25px;
+}
+
 /* Resolving conflicts */
 #copyright {
   color: red;
