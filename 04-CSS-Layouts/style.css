@@ -268,3 +268,7 @@ h1 {
 nav {
   float: right;
 }
+
+.clear {
+  clear: both;
+}
