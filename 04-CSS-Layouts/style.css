@@ -15,7 +15,7 @@ body {
   /* 设置整个页面的宽度及使其水平居中显示,
   这样即使浏览器窗口变化，其也会不断调整位置使其自身一直居中显示
    */
-  width: 700px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -270,5 +270,19 @@ nav {
 }
 
 .clear {
+  clear: both;
+}
+
+article {
+  width: 820px;
+  float: left;
+}
+
+aside {
+  width: 300px;
+  float: right;
+}
+
+footer {
   clear: both;
 }
