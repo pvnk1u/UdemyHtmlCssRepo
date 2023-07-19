@@ -2,6 +2,7 @@
   /* border-top: #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* body 元素是所有元素的父元素，所以其样式会被所有元素继承*/
@@ -47,8 +48,7 @@ aside {
   /* 表示上下边框样式为5像素宽度颜色为1098ad的实线边框 */
   border-top: 5px solid #1098ad;
   border-bottom: 5px solid #1098ad;
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 h1,
@@ -78,6 +78,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -121,6 +122,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 li:first-child {
@@ -274,7 +276,7 @@ nav {
 }
 
 article {
-  width: 820px;
+  width: 825px;
   float: left;
 }
 
