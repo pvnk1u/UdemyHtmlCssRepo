@@ -7,3 +7,41 @@ Flexbox 是一种用于按行或按列布局元素的一维布局方法。元素
 3. 使多列布局中的所有列采用相同的高度，即使它们包含的内容量不同。
 
 Flexbox 使得这些布局任务变得更加容易。
+
+要使用 flexbox，首先要创建弹性容器，可以通过在容器上添加 display: flex;实现。这样弹性容器的所有直接子元素都将变为弹性元素。这些弹性元素的布局方向称为主轴。另外一个轴称为辅轴。主轴和辅轴可以通过设置属性调换。
+
+对于弹性容器，有以下几个需要记住的属性：
+
+1. gap
+   可以在不使用 margin 外边距的情况下在各元素之间创建间隔。
+2. justify-content
+   沿主轴对齐项目（默认情况下水平对齐）的方式
+   可选值有：flex-start | flex-end | center | space-between | space-around | space-evenly
+3. align-items
+   沿辅轴对齐项目（默认情况下垂直对齐）的方式
+   stretch | flex-start | flex-end | center | baseline
+4. flex-direction
+   定义哪个是主轴
+   row | row-reverse | column | column-reverse
+5. flex-wrap
+   设置在项目太大的时候是否可以换行
+   nowrap | wrap | wrap-reverse
+6. align-content
+   在元素有多行时适用
+   stretch | flex-start | flex-end | center | space-between | space-around
+
+对于弹性容器内部的容器元素，也有几个需要记住的属性：
+
+1. align-self
+   重新设置单个弹性容器元素的对齐属性（而不是适用弹性容器设置的的默认对齐方式）
+   可选值有: auto | stretch | flex-start | flex-end | center | baseline
+2. flex-grow
+   允许弹性元素自动扩大以占据多余的空白空间
+3. flex-shrink
+   设置当空间不够时弹性元素的伸缩方式
+4. flex-basis
+   不适用 width 设置一个弹性元素的宽度
+5. flex: 0 1 auto
+   简写法，共有三个值，分别表示 flex-grow，-shrink、basis
+6. order
+   不需要改变弹性元素在代码中的顺序即可定义真正显示时的先后顺序
