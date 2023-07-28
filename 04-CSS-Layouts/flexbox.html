@@ -46,13 +46,26 @@
         /* 设置主轴方向的各个弹性元素的排列方式，有center（全部居中排列）、flex-start\flex-end
         以及控制元素间距的space-between等值，默认值是flex-start */
         justify-content: flex-start;
-        /* 设置弹性元素间的距离 */
-        gap: 30px;
+        gap: 10px;
+      }
+
+      .el {
+        /* 默认值0 
+        flex-grow: 0;
+        /* 默认值1 
+        flex-shrink: 1;
+        /* 默认值auto  用于设置弹性元素的大小
+        flex-basis: auto;*/
+        /* flex-basis: 200px; */
+        /* flex-shrink: 0; */
+        /* flex-grow: 1; */
+        flex: 1;
       }
 
       .el--1 {
         align-self: flex-start;
         /* order: 2; */
+        flex-grow: 2;
       }
 
       .el--5 {
@@ -74,7 +87,7 @@
       <div class="el el--3">CSS</div>
       <div class="el el--4">are</div>
       <div class="el el--5">amazing</div>
-      <div class="el el--6">languages</div>
+      <!-- <div class="el el--6">languages</div> -->
       <div class="el el--7">to</div>
       <div class="el el--8">learn</div>
     </div>
