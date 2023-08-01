@@ -174,7 +174,6 @@ nav a:link {
   /* 正常情况下margin-top对于行内元素a不生效，
   但是通过display设置为inline-block后可以使a元素在保持行内元素只占据
   需要的空间不换行的情况下使其可以具有块级元素的属性样式（如margin-top） */
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -252,7 +251,7 @@ nav {
 }
 
 /* FLOAT */
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -287,4 +286,47 @@ aside {
 
 footer {
   clear: both;
+} */
+
+/**
+* 使用flexbox实现与上面的float同样的一维布局效果
+*/
+.main-header {
+  display: flex;
+  /* 使main-header中的h1元素和nav元素水平对齐 */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+}
+
+.author {
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+
+.related-post {
+  display: flex;
+  align-items: center;
+  /* 设置内部弹性元素的间距 */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.related-link:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
 }
