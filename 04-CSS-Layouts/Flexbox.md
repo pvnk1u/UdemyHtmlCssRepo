@@ -17,6 +17,7 @@ Flexbox 使得这些布局任务变得更加容易。
 2. justify-content
    沿主轴对齐项目（默认情况下水平对齐）的方式
    可选值有：flex-start | flex-end | center | space-between | space-around | space-evenly
+   space-between 可以实现均分排满主轴的效果
 3. align-items
    沿辅轴对齐项目（默认情况下垂直对齐）的方式
    stretch | flex-start | flex-end | center | baseline
