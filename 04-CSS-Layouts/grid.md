@@ -25,3 +25,9 @@ CSS Grid 使用方式：
    用于覆盖对齐项
 
 在 CSS grid 中，可以在 grid-template-columns 和 grid-template-rows 中使用 fr(比如 1fr) 单位替代 px 单位指定大小。这样可以使对应的列或行填满 CSS Grid 容器中在指定方向上的所有剩余空间。如果对所有网格都使用了 fr 单位来指定大小，则这些网格将根据 fr 单位的大小按照 fr 单位的比例瓜分占满容器在这个方向上的空间。如果各网格的值都相同（1fr），则将均分容器在这个方向上的空间。
+
+如果在 grid-template-colums 和 grid-template-rows 中的某一列或某一行上使用了 auto，则这一列（行）将只占据其实际需要占据的空间，除去这个 auto 大小元素之后的空间再被其他的设置了相应 px 像素或者 fr 单位的列（行）瓜分。
+
+如果想快速均匀设置四列元素的 grid 布局，只需要简写为 grid-template-columns: repeat(4,1fr)，而不用写上四遍 1fr。
+
+如果没有手动设置容器的高度，则每一行网格的实际高度由这一行中高度最高的一个网格的高度确定。
