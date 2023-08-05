@@ -19,7 +19,7 @@ CSS Grid 使用方式：
 1. 网格列、网格行
    grid-column: <start line> / <end line> | span <number>
    grid-row: <start line> / <end line> | span <number>
-   网格列和网格行对于放置网格项目进入特定的单元格非常重要。
+   网格列和网格行对于放置网格项目进入特定的单元格（而不是按照默认的顺序放入对应的单元格）非常重要。
 2. justify-self: stretch | start | center | end
    align-self: stretch | start | center | end
    用于覆盖对齐项
@@ -30,4 +30,4 @@ CSS Grid 使用方式：
 
 如果想快速均匀设置四列元素的 grid 布局，只需要简写为 grid-template-columns: repeat(4,1fr)，而不用写上四遍 1fr。
 
-如果没有手动设置容器的高度，则每一行网格的实际高度由这一行中高度最高的一个网格的高度确定。
+如果没有手动设置容器的高度，则每一行网格的实际高度由这一行中高度最高的一个网格的高度确定。如果通过 grid-template-rows 设置了每一行的高度相同，则所有行的高度都由其中高度最高的一个网格确定。
