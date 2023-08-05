@@ -13,6 +13,7 @@ CSS Grid 使用方式：
 5. 在 CSS Grid 容器 上还有两个属性是 justify-content 和 align-content
    justify-content: stretch | start | center | end
    align-content: stretch | start | center | end
+   需要与 justify-items 和 align-items 注意区分的是，这两个内容对齐属性指定的是网格的行、列两个轨道在其父 Grid 容器中的排列方式（因为网格容器的大小肯定大于等于网格的大小）。
 
 对于 CSS Grid 容器中的网格项目，有如下属性：
 
