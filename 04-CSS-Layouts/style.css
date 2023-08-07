@@ -27,16 +27,11 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
   /* height: 80px; */
 }
 
 nav {
   font-size: 18px;
-}
-
-article {
-  margin-bottom: 60px;
 }
 
 .post-header {
@@ -331,14 +326,14 @@ footer {
   font-style: italic;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
   margin-bottom: 60px;
   /* 设置弹性容器内的各个元素辅轴对齐项目的方式 
   其默认值为stretch，即各个元素在辅轴上的宽度将以最长的一个元素为准，
   其他元素即使并没有那么大的空间，也将统一拉长到最大长度
-  */
+  * /
   align-items: flex-start;
 }
 
@@ -349,7 +344,7 @@ article {
   所以这里只需要设置article的flex值为1即代表article元素
   将尽可能占据弹性容器总宽度减去aside宽度和gap间距后剩余的宽度，
   而无需再手动计算指定article的宽度
-  */
+  * /
   flex: 1;
   margin-bottom: 0;
 }
@@ -361,8 +356,35 @@ aside {
   flex-shrink: 1;
   /* 默认值auto  用于设置弹性元素的大小
   flex-basis: auto;*/
-  /* flex-basis: 200px; */
-  /* flex-shrink: 0; */
-  /* flex-grow: 1; */
+/* flex-basis: 200px; */
+/* flex-shrink: 0; */
+/* flex-grow: 1; * /
   flex: 0 0 300px;
+} */
+
+/* CSS Grid Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  /* 指定标题栏占据第一行的全部空间(span 2代表占据两个单元格，
+  而这个grid中每行总共便只有2个单元格)
+  grid-column: 1 / span 2;*/
+  /*与上面的功能相同，-1 代表将一直占据到这行结束 */
+  grid-column: 1 / -1;
+}
+
+article {
+}
+
+aside {
+}
+
+footer {
+  grid-column: 1/-1;
 }
