@@ -10,10 +10,13 @@ CSS Grid 使用方式：
 4. 与 flexbox 像素，CSS Grid 容器 也具有 justify-items 和 align-items 属性，分别代表行排列方式和列排列方式。
    justify-items: stretch | start | center | end
    align-items: stretch | start | center | end
+   这两个属性和在 flexbox 中的用法及作用一致，是用来指定实际内容在其对应的单元格内的排列方式的
 5. 在 CSS Grid 容器 上还有两个属性是 justify-content 和 align-content
    justify-content: stretch | start | center | end
    align-content: stretch | start | center | end
    需要与 justify-items 和 align-items 注意区分的是，这两个内容对齐属性指定的是网格的行、列两个轨道在其父 Grid 容器中的排列方式（因为网格容器的大小肯定大于等于网格的大小）。
+
+对于这两组属性的区分，只需要记住 justify-items 和 align-items 指定的是实际内容在其所在的 grid 内的单元格中的排列方式，而 justify-content 和 align-content 指定的则是 grid 中的单元格在 grid 容器中的排列方式。
 
 对于 CSS Grid 容器中的网格项目，有如下属性：
 
@@ -23,7 +26,7 @@ CSS Grid 使用方式：
    网格列和网格行对于放置网格项目进入特定的单元格（而不是按照默认的顺序放入对应的单元格）非常重要。
 2. justify-self: stretch | start | center | end
    align-self: stretch | start | center | end
-   用于覆盖对齐项
+   用于覆盖对齐项，当其所在的 grid 容器被指定了 justify-items 和 align-items 属性，但是又想让特殊项使用个性化项目对齐样式替代 grid 容器的元素对齐样式时，就可以使用 justify-self 和 align-self 来代替父 grid 容器中的 justify-items 和 align-items 设置的样式。
 
 在 CSS grid 中，可以在 grid-template-columns 和 grid-template-rows 中使用 fr(比如 1fr) 单位替代 px 单位指定大小。这样可以使对应的列或行填满 CSS Grid 容器中在指定方向上的所有剩余空间。如果对所有网格都使用了 fr 单位来指定大小，则这些网格将根据 fr 单位的大小按照 fr 单位的比例瓜分占满容器在这个方向上的空间。如果各网格的值都相同（1fr），则将均分容器在这个方向上的空间。
 
