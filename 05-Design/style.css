@@ -113,7 +113,12 @@ img {
 }
 
 /* FEATURES */
+/* 设置svg图标的样式大小及颜色 */
 .features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -177,6 +182,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
