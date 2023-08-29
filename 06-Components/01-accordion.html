@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Accordion Component</title>
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+      /* 
+        MAIN COLOR: #087f5b
+        GREY COLOR: #343a40
+        */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        /* 优先使用inter（sans-serif）字体，如果不可用，再使用普通的sans-serif字体替代 */
+        font-family: "Inter", sans-serif;
+        /* 颜色属性可以被继承，所以可以在body中直接指定页面所有字体的颜色 */
+        color: #343a40;
+        /* 行高可被继承 */
+        line-height: 1;
+      }
+
+      /*
+      手风琴样式
+      */
+      .accordion {
+        width: 700px;
+        margin: 100px auto;
+      }
+
+      .item {
+      }
+
+      .number,
+      .text {
+        font-size: 24px;
+        font-weight: 500;
+        color: #087f5b;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #087f5b;
+      }
+
+      .hidden-box {
+      }
+
+      .hidden-box p {
+        line-height: 1.6;
+        margin-bottom: 24px;
+      }
+
+      .hidden-box ul {
+        color: #868e96;
+        margin-left: 18px;
+
+        /*
+        设置列表项为flex弹性元素并且排列方向为列而不是默认的行
+        */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="item">
+        <p class="number">02</p>
+        <p class="text">How long do i have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Accusantium dolor at sequi obcaecati cupiditate. Voluptates
+            repellendus cupiditate aperiam! Incidunt amet quo neque.
+          </p>
+          <ul>
+            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Quasi accusamus corporis totam tempora suscipit ab obcaecati.
+            </li>
+            <li>Tempora, et atque officia at consequatur laborum!</li>
+            <li>Repudiandae praesentium illo voluptate in, atque enim.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
