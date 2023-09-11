@@ -11,6 +11,12 @@
       rel="stylesheet"
     />
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       html {
         font-family: "Rubik" sans-serif;
         color: #444;
@@ -19,6 +25,13 @@
       .container {
         margin: 0 auto;
         width: 1200px;
+      }
+
+      header {
+        /* 指定header元素占据视口高度的100%
+        还有一个相对的是vw，但是一般很少使用，因为块级元素默认占据整行
+         */
+        height: 100vh;
       }
 
       nav {
