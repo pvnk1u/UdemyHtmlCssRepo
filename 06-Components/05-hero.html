@@ -32,6 +32,16 @@
         还有一个相对的是vw，但是一般很少使用，因为块级元素默认占据整行
          */
         height: 100vh;
+        position: relative;
+        /* 设置背景图片及其渐变效果 */
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        /* 设置背景图片的大小，大多数时候使用cover自动调整大小覆盖即可 */
+        background-size: cover;
+        color: #fff;
       }
 
       nav {
@@ -39,11 +49,28 @@
         font-weight: 700;
         display: flex;
         justify-content: space-between;
+        padding-top: 32px;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+
+        /* In relation to parent size */
+        left: 50%;
+        top: 50%;
+        /* In relation to element size */
+        transform: translate(-50%, -50%);
+      }
+
+      .header-container-inner {
+        width: 50%;
       }
 
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
 
       p {
@@ -81,13 +108,16 @@
         <div>NAVIGATION</div>
       </nav>
 
-      <div class="container">
-        <h1>A heathy meal delivered to your door,every single day</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healthy algain. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#" class="btn">Start eating well</a>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A heathy meal delivered to your door,every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healthy algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#" class="btn">Start eating well</a>
+        </div>
       </div>
     </header>
 
