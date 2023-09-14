@@ -71,6 +71,27 @@
 
       section {
         background-color: #e9ecef;
+        padding: 40px;
+
+        /* 设置内容较多时滚动显示，值为hidden时多余的内容将不会显示 */
+        overflow: scroll;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .email {
+        background-color: #adb5bd;
+        height: 96px;
+        /* 不允许收缩，
+        这样才能在其父元素设置为overflow: scroll 时正常显示且可滚动显示而不影响整体布局 */
+        flex-shrink: 0;
+        /* 将单个元素设置为flex，
+        并且设置align-items和justify-content为center可快速使其居中显示 */
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
 
       aside {
@@ -87,7 +108,18 @@
       <button>Mark unread</button>
       <button>Trash</button>
     </menu>
-    <section>Inbox</section>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
     <main>Email view</main>
     <aside>Additional info</aside>
   </body>
