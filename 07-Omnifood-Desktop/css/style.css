@@ -47,7 +47,10 @@ Tints:
 }
 
 html {
-  font-size: 10px;
+  /* font-size: 20px; */
+  /* 10px / 16px = 62.5% */
+  /* 通过百分比而不是固定px的方式可以实现尊重用户个性化字体大小设置的需求。 */
+  font-size: 62.5%;
 }
 
 body {
@@ -64,6 +67,7 @@ body {
   /* max-width: 1000px; */
   max-width: 50rem;
   padding: 4rem;
-  color: #fff;
+
   font-size: 2rem;
+  color: #fff;
 }
