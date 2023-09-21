@@ -60,14 +60,13 @@ body {
   color: #555;
 }
 
-.test {
-  background-color: red;
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
-  /* width: 1000px; */
-  /* max-width: 1000px; */
-  max-width: 50rem;
-  padding: 4rem;
-
-  font-size: 2rem;
-  color: #fff;
+.hero-img {
+  width: 100%;
 }
