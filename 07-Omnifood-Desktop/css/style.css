@@ -189,7 +189,7 @@ body {
   height: 2.2rem;
 }
 
-.main-nav-list{
+.main-nav-list {
   list-style: none;
   display: flex;
   align-items: center;
@@ -197,7 +197,7 @@ body {
 }
 
 .main-nav-link:link,
-.main-nav-link:visited{
+.main-nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: #333;
@@ -207,12 +207,12 @@ body {
 }
 
 .main-nav-link:hover,
-.main-nav-link:active{
+.main-nav-link:active {
   color: #cf711f;
 }
 
 .main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited{
+.main-nav-link.nav-cta:visited {
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
@@ -220,6 +220,31 @@ body {
 }
 
 .main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active{
+.main-nav-link.nav-cta:active {
   background-color: #cf711f;
+}
+
+.section-how {
+  padding: 9.6px 0;
+  background-color: orangered;
+}
+.section-how div {
+  padding: 100px;
+  font-size: 50px;
+}
+
+.section-how div:nth-child(1) {
+  background-color: aqua;
+}
+
+.section-how div:nth-child(2) {
+  background-color: blue;
+}
+
+.section-how div:nth-child(3) {
+  background-color: violet;
+}
+
+.section-how div:nth-child(4) {
+  background-color: yellow;
 }
