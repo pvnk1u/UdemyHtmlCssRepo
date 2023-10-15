@@ -225,26 +225,30 @@ body {
 }
 
 .section-how {
-  padding: 9.6px 0;
+  padding: 9.6rem 0;
   background-color: orangered;
 }
-.section-how div {
-  padding: 100px;
-  font-size: 50px;
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
 }
 
-.section-how div:nth-child(1) {
-  background-color: aqua;
+.grid {
+  display: grid;
+  gap: 9.6rem;
 }
 
-.section-how div:nth-child(2) {
-  background-color: blue;
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.section-how div:nth-child(3) {
-  background-color: violet;
+.grid-3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.section-how div:nth-child(4) {
-  background-color: yellow;
+.grid-3-cols {
+  grid-template-columns: repeat(4, 1fr);
 }
