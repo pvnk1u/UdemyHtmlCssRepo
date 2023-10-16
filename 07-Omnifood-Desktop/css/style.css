@@ -226,7 +226,6 @@ body {
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: orangered;
 }
 
 .container {
@@ -251,4 +250,8 @@ body {
 
 .grid-3-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.step-img {
+  width: 50%;
 }
