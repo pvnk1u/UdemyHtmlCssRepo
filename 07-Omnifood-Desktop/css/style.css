@@ -343,3 +343,34 @@ body {
 .step-img {
   width: 35%;
 }
+
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+
+/* FEATURED IN SECTION */
+.heading-feartured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  /* 左右居中显示 */
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  /* 个性化设置图像的属性，可以使图像模糊、变灰、改变颜色、饱和度等 */
+  /* brightness为0将把图片亮度设置为0，即看起来全是黑色 */
+  filter: brightness(0);
+  /* filter配合下面的opacity设置图片透明度。0值时完全看不见，100时完全展示，
+  可以通过此属性设置图片显示为灰色 */
+  opacity: 50%;
+}
