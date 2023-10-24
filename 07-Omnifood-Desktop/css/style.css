@@ -280,11 +280,11 @@ body {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.grid-3-cols {
+.grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.grid-4-cols {
+.grid--4-cols {
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -373,4 +373,9 @@ body {
   /* filter配合下面的opacity设置图片透明度。0值时完全看不见，100时完全展示，
   可以通过此属性设置图片显示为灰色 */
   opacity: 50%;
+}
+
+/* MEALS SECTION */
+.section-meals {
+  padding: 9.6rem 0;
 }
