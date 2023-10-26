@@ -141,7 +141,7 @@ body {
   padding: 1.6rem 3.2rem;
   /* 设置按钮正常状态和悬停激活状态切换时的切换动画效果
   background-color代表要通过动画切换的样式为背景颜色，1s代表在1s内切换完毕 */
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--full:link,
@@ -174,7 +174,11 @@ body {
 }
 
 .margin-right-sm {
-  margin-right: 1.6rem;
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
 }
 
 .dilivered-meals {
@@ -393,6 +397,15 @@ body {
   /* 最上面的图片还是方形的，会越过meal边框的圆角，
   因此需要使用overflow属性将照片边角多余的部分隐藏掉 */
   overflow: hidden;
+  /* 设置meal整体的动画过渡效果为全部过渡，过渡时间为0.4秒 */
+  transition: all 0.4s;
+}
+
+.meal:hover {
+  /* 设置当鼠标悬停在meal卡片上时，在y轴上向上浮动 */
+  transform: translateY(-1.2rem);
+  /* 设置鼠标悬停时与正常情况下不同的阴影效果 */
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 
 .meal-content {
@@ -445,6 +458,10 @@ strong {
   font-weight: 500;
 }
 
+.center-text {
+  text-align: center;
+}
+
 .meal-icon {
   height: 2.4rem;
   width: 2.4rem;
@@ -453,4 +470,45 @@ strong {
 
 .meal-img {
   width: 100%;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
