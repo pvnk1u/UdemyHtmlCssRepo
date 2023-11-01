@@ -23,7 +23,7 @@ Paragraph default: 1.6
 
 --- 02 COLORS
 
-Primary #e67e22
+Primary #eb984e #e67e22
 
 Tints: #fdf2e9
 
@@ -39,7 +39,7 @@ Tints: #fdf2e9
 
 
 --- 05 SHADOWS
-
+box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,0.75);
 
 --- 06 BORDER-RADIUS
 
@@ -687,4 +687,30 @@ strong {
 .feature-text {
   font-size: 1.8rem;
   line-height: 1.8;
+}
+
+/* CALL TO ACTION SECTION */
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  /* 设置背景图片溢出时隐藏，overflow对背景图片同样有效 */
+  overflow: hidden;
+  /* temp */
+  height: 50rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  /* 调整背景图片尺寸，确保无论页面元素尺寸是多少，背景图片都将始终完全覆盖它 */
+  background-size: cover;
+  background-position: center;
 }
