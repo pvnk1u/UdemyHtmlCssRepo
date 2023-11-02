@@ -716,6 +716,7 @@ strong {
 .cta-text {
   font-size: 1.8rem;
   line-height: 1.8;
+  margin-bottom: 4.8rem;
 }
 
 .cta-img-box {
@@ -728,4 +729,11 @@ strong {
   /* 调整背景图片尺寸，确保无论页面元素尺寸是多少，背景图片都将始终完全覆盖它 */
   background-size: cover;
   background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
 }
