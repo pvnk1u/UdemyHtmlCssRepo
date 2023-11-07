@@ -1,3 +1,2 @@
-可以通过
-https://maketintsandshades.com/
-来快速选择指定颜色的同色系颜色。
+@media (max-width: 1200px){}：在页面宽度不大于 1200 像素时生效的样式。
+当多个@media 媒体查询中有重复冲突样式时，后定义的样式将被应用（与 max-width 值的大小无关）。
