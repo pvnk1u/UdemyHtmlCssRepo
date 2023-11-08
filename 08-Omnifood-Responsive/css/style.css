@@ -80,20 +80,6 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 
-@media (max-width: 600px) {
-  .section-hero {
-    border: 20px dashed blue;
-    background-color: blue;
-  }
-}
-
-/* 当页面宽度小于等于1200像素时，以下样式将生效（使以下样式生效的最大页面宽度是1200像素） */
-@media (max-width: 1200px) {
-  .section-hero {
-    background-color: orangered;
-  }
-}
-
 .hero {
   max-width: 130rem;
   margin: 0 auto;
