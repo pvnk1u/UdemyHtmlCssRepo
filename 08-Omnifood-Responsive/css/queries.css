@@ -56,3 +56,64 @@ Instead,1 rem = 1em = 16px */
     padding: 3.2rem;
   }
 }
+
+/* BELOW 944px (竖向平板电脑) */
+@media (max-width: 59em) {
+  html {
+    /* 8px / 16px = 50% */
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    /* 图片是行内元素，因此text-align有效 */
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .dilivered-meals {
+    justify-content: center;
+  }
+
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.6rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .cta {
+    /* 3/5 =60% + 2/5 = 40% */
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}
