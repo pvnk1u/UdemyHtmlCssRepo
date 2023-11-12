@@ -66,6 +66,7 @@ html {
   /* 10px / 16px = 62.5% */
   /* 通过百分比而不是固定px的方式可以实现尊重用户个性化字体大小设置的需求。 */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -73,6 +74,28 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
+  /* Only works if there is nothing absolutely 
+  positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* 默认不显示，只在手机分辨率下才显示(@mdeia) */
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 4.8rem;
+  height: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 .section-hero {
@@ -240,6 +263,7 @@ body {
 
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 
 .logo {
